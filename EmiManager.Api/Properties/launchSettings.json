@@ -1,0 +1,45 @@
+{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5133"
+    },
+    "https": {
+      "commandName": "Project",
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "JWT_ISSUER": "https://localhost:7053",
+        "JWT_AUDIENCE": "https://localhost:7053",
+        "JWT_KEY": "nyV5nvb7TThSL5IwCS5k",
+        "MONGO_CONN_STR": "mongodb+srv://vikram:vk229103@mumbaicluster.zqtmdsl.mongodb.net/?retryWrites=true&w=majority"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7053;http://localhost:5133",
+      "hotReloadEnabled": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:34970",
+      "sslPort": 44340
+    }
+  }
+}
